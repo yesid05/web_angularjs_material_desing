@@ -6,6 +6,7 @@
     <link rel="stylesheet" href="https://gitcdn.xyz/repo/angular/bower-material/master/angular-material.css">
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
     <link href='https://fonts.googleapis.com/css?family=Marck+Script' rel='stylesheet' type='text/css'>    
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
     <link rel="stylesheet" type="text/css" href="css/main.css">
     <link rel="stylesheet" type="text/css" href="css/contacto.css">
 </head>
@@ -29,58 +30,87 @@
             <md-toolbar show-sm show-md hide layout="row">
                 <div  layout="row">
                     <md-menu >
-                        <md-button class="md-icon-button  md-fab" ng-click="$mdOpenMenu()">
+                        <md-button class="md-icon-button  md-fab md-primary" ng-click="$mdOpenMenu()">
                             <md-icon md-menu-origin>menu</md-icon>
                         </md-button>
                         <md-menu-content width="4">
                             <md-menu-item>
-                                <md-button class="md-primary" ng-click="ctrl.redial($event)" ng-href="#" target="_self">Inicio</md-button>
+                                <md-button class="md-raised md-primary" ng-click="ctrl.redial($event)" ng-href="#" target="_self">Inicio</md-button>
                             </md-menu-item>
                             <md-menu-item>
-                                <md-button class="md-primary" ng-click="ctrl.redial($event)" ng-href="#" target="_self">Productos</md-button>
+                                <md-button class="md-raised md-primary" ng-click="ctrl.redial($event)" ng-href="#" target="_self">Productos</md-button>
                             </md-menu-item> 
                             <md-menu-item>
-                                <md-button class="md-primary" ng-click="ctrl.redial($event)" ng-href="#" target="_self">Quienes somos</md-button>
+                                <md-button class="md-raised md-primary" ng-click="ctrl.redial($event)" ng-href="#" target="_self">Quienes somos</md-button>
                             </md-menu-item>
                             <md-menu-item>
-                                <md-button class="md-primary" ng-click="ctrl.redial($event)" ng-href="#" target="_self">Contacto</md-button>
+                                <md-button class="md-raised md-primary" ng-click="ctrl.redial($event)" ng-href="#" target="_self">Contacto</md-button>
                             </md-menu-item> 
                             <md-menu-item>
-                                <md-button class="md-primary" ng-click="ctrl.redial($event)" ng-href="#" target="_self">Registrarse</md-button>
+                                <md-button class="md-raised md-primary" ng-click="ctrl.redial($event)" ng-href="#" target="_self">Registrarse</md-button>
                             </md-menu-item> 
                             <md-menu-item>
-                                <md-button class="md-primary" ng-click="ctrl.redial($event)" ng-href="#" target="_self">Ingresar</md-button>
+                                <md-button class="md-raised md-primary" ng-click="ctrl.redial($event)" ng-href="#" target="_self">Ingresar</md-button>
                             </md-menu-item>   
                         </md-menu-content>   
                     </md-menu> 
+                    <span flex></span>
                     <h1 class="md-headline" >Muebles cauca</h1>
                 </div>             
             </md-toolbar>  
     </header>
-    <section flex latout-sm="column" latout-md="row" layout-lg="row" layout-gt-lg="row">
-        <md-content >
-            <md-input-container flex>
-                <label>Nombre</label>
-                <input type="text">
-            </md-input-container>
-            <md-input-container flex>
-                <label>Correo</label>
-                <input type="text">
-            </md-input-container>
-            <md-input-container flex>
-                <label>Asunto</label>
-                <input type="text">
-            </md-input-container>
-            <md-input-container flex>
-                <label>Mensaje</label>
-                <textarea></textarea>
-            </md-input-container>
+    <section flex layout="column" layout-align="center center" layout-padding>
+        <md-content layout layout-padding>
+            <h1>Contactenos</h1>
         </md-content>
-        <md-content>
-            <md-button class="md-fab md-primary md-hue-2" aria-label="Eat cake">
-                <md-icon>menu</md-icon>
-            </md-button>
+        <md-content flex latout-sm="column" layout-gt-sm="row" latout-md="row" layout-lg="row" layout-gt-lg="row">
+            <md-content flex layout="column">
+                <md-input-container flex>
+                    <label>Nombre</label>
+                    <input type="text">
+                </md-input-container>
+                <md-input-container flex>
+                    <label>Correo</label>
+                    <input type="text">
+                </md-input-container>
+                <md-input-container flex>
+                    <label>Asunto</label>
+                    <input type="text">
+                </md-input-container>
+                <md-input-container flex>
+                    <label>Mensaje</label>
+                    <textarea></textarea>
+                </md-input-container>
+                <md-button flex class="md-raised md-accent">Enviar</md-button>
+            </md-content>
+            <md-content layout="column" class="contact-padding icon">
+                <md-content layout="row">
+                    <md-button class="md-fab md-primary md-mini" aria-label="Facebook">
+                        <md-icon class="fa fa-facebook"></md-icon>
+                    </md-button>
+                    <md-button class="md-primary md-mini" aria-label="">Facebook</md-button>
+                </md-content>
+                <md-content layout="row">
+                    <md-button class="md-fab md-primary md-mini" aria-label="Facebook">
+                        <md-icon class="fa fa-twitter"></md-icon>
+                    </md-button>
+                    <md-button class="md-primary md-mini" aria-label="">Twitter</md-button>
+                </md-content>
+                <md-content layout="row">
+                    <md-button class="md-fab md-primary md-mini" aria-label="Instagram">
+                        <md-icon class="fa fa-instagram"></md-icon>
+                    </md-button>
+                    <md-button class="md-primary md-mini" aria-label="">Instagram</md-button>
+                </md-content>
+                <md-content layout="row">
+                    <md-button class="md-fab md-primary md-mini" aria-label="Youtobe">
+                        <md-icon class="fa fa-youtube"></md-icon>
+                    </md-button>
+                    <md-button class="md-primary md-mini" aria-label="">Youtube</md-button>
+                </md-content>                
+            </md-content>
         </md-content>
+        
     </section>
     <footer flex layout="column" layout-padding class="default-primary-color">
         <md-content layout layout-align="center center" class="label md-caption default-primary-color" >

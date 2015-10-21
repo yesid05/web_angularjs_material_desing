@@ -66,6 +66,12 @@ section .layout-padding-gt-md{
 footer{
   margin-top: 60px; 
 }
+@media (max-width: 600px) {
+  footer{
+    margin-top: 0px;
+  }
+}
+
 
 footer .label{
   color: #727272;

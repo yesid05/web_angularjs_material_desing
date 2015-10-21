@@ -7,6 +7,7 @@
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
     <link href='https://fonts.googleapis.com/css?family=Marck+Script' rel='stylesheet' type='text/css'>    
     <link rel="stylesheet" type="text/css" href="css/main.css">
+    <link rel="stylesheet" type="text/css" href="css/quienessomos.css">
 </head>
 <body>
 	<header flex layout="row" layout-wrap>  
@@ -17,7 +18,7 @@
                         <md-menu>
                             <md-button ng-href="index.html" target="_self">Inicio</md-button>
                             <md-button ng-href="producto.html" target="_self">Productos</md-button>
-                            <md-button ng-href="quienesomos.html" target="_self">Quienes Somos</md-button>
+                            <md-button ng-href="quienessomos.html" target="_self">Quienes Somos</md-button>
                             <md-button ng-href="contacto.html" target="_self">Contacto</md-button>
                             <md-button ng-href="https://github.com/" target="_self">Registrarse</md-button>
                             <md-button ng-href="https://github.com/" target="_self">Ingresar</md-button>
@@ -28,30 +29,31 @@
             <md-toolbar show-sm show-md hide layout="row">
                 <div  layout="row">
                     <md-menu >
-                        <md-button class="md-icon-button  md-fab" ng-click="$mdOpenMenu()">
+                        <md-button class="md-icon-button  md-fab md-primary" ng-click="$mdOpenMenu()">
                             <md-icon md-menu-origin>menu</md-icon>
                         </md-button>
                         <md-menu-content width="4">
                             <md-menu-item>
-                                <md-button class="md-primary" ng-click="ctrl.redial($event)" ng-href="#" target="_self">Inicio</md-button>
+                                <md-button class="md-raised md-primary" ng-click="ctrl.redial($event)" ng-href="#" target="_self">Inicio</md-button>
                             </md-menu-item>
                             <md-menu-item>
-                                <md-button class="md-primary" ng-click="ctrl.redial($event)" ng-href="#" target="_self">Productos</md-button>
+                                <md-button class="md-raised md-primary" ng-click="ctrl.redial($event)" ng-href="#" target="_self">Productos</md-button>
                             </md-menu-item> 
                             <md-menu-item>
-                                <md-button class="md-primary" ng-click="ctrl.redial($event)" ng-href="#" target="_self">Quienes somos</md-button>
+                                <md-button class="md-raised md-primary" ng-click="ctrl.redial($event)" ng-href="#" target="_self">Quienes somos</md-button>
                             </md-menu-item>
                             <md-menu-item>
-                                <md-button class="md-primary" ng-click="ctrl.redial($event)" ng-href="#" target="_self">Contacto</md-button>
+                                <md-button class="md-raised md-primary" ng-click="ctrl.redial($event)" ng-href="#" target="_self">Contacto</md-button>
                             </md-menu-item> 
                             <md-menu-item>
-                                <md-button class="md-primary" ng-click="ctrl.redial($event)" ng-href="#" target="_self">Registrarse</md-button>
+                                <md-button class="md-raised md-primary" ng-click="ctrl.redial($event)" ng-href="#" target="_self">Registrarse</md-button>
                             </md-menu-item> 
                             <md-menu-item>
-                                <md-button class="md-primary" ng-click="ctrl.redial($event)" ng-href="#" target="_self">Ingresar</md-button>
+                                <md-button class="md-raised md-primary" ng-click="ctrl.redial($event)" ng-href="#" target="_self">Ingresar</md-button>
                             </md-menu-item>   
                         </md-menu-content>   
                     </md-menu> 
+                    <span flex></span>
                     <h1 class="md-headline" >Muebles cauca</h1>
                 </div>             
             </md-toolbar>  
@@ -68,7 +70,7 @@
     	<md-content show-sm hide layout layout-align="center center">
 			<h1 class="md-title">Misión</h1>
     	</md-content>
-    	<md-content  class="layout-padding-gt-md">
+    	<md-content layout layout-align="center center" class="center-mision-vision">
 			<p>
 				Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
 				tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
@@ -84,16 +86,16 @@
     	<md-content show-sm hide layout layout-align="center center">
 			<h1 class="md-title">Visión</h1>
     	</md-content>
-    	<md-content layout layout-align="center center" class="layout-padding-gt-md">
-			<p>
-				Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-				tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
-				quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
-				consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
-				cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
-				proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
-			</p>
-    	</md-content>
+    	<md-content layout layout-align="center center" class="center-mision-vision">
+            <p>
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+                tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+                quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+                consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+                cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+                proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+            </p>
+        </md-content>
     </section>
     <footer flex layout="column" layout-padding class="default-primary-color">
         <md-content layout layout-align="center center" class="label md-caption default-primary-color" >

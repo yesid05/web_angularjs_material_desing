@@ -1,1 +1,18 @@
-contacto.css
+section .contact-padding{
+	padding-left: 50px;
+}
+@media (max-width: 600px) {
+  section .contact-padding {
+    padding-left: 0px;
+  }
+}
+.fa:before{
+	margin: 0 auto;
+	font-size: 23px;
+}
+.icon{
+	margin: 10px 0;
+}
+.icon .md-button{
+	margin: 10px 0;
+}
