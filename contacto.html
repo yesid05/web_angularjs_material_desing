@@ -64,7 +64,7 @@
             <h1>Contactenos</h1>
         </md-content>
         <md-content flex latout-sm="column" layout-gt-sm="row" latout-md="row" layout-lg="row" layout-gt-lg="row">
-            <md-content flex layout="column">
+            <md-content flex layout="column" hide>
                 <md-input-container flex>
                     <label>Nombre</label>
                     <input type="text">
@@ -81,6 +81,33 @@
                     <label>Mensaje</label>
                     <textarea></textarea>
                 </md-input-container>
+                <md-button flex class="md-raised md-accent">Enviar</md-button>
+            </md-content>
+            <md-content flex layout="column" show>
+                <md-content layout="row">
+                    <label>Nombre:</label>
+                    <md-input-container flex>                    
+                        <input type="text">
+                    </md-input-container>
+                </md-content>
+                <md-content layout="row">
+                    <label>Correo:</label>
+                    <md-input-container flex>                    
+                        <input type="text">
+                    </md-input-container>
+                </md-content>
+                <md-content layout="row">
+                    <label>Asunto:</label>
+                    <md-input-container flex>                    
+                        <input type="text">
+                    </md-input-container>
+                </md-content>
+                <md-content layout="column">
+                <label>Mensaje:</label>
+                <md-input-container flex>                    
+                    <textarea></textarea>
+                </md-input-container>
+                </md-content>
                 <md-button flex class="md-raised md-accent">Enviar</md-button>
             </md-content>
             <md-content layout="column" class="contact-padding icon">
