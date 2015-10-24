@@ -55,16 +55,21 @@
                         </md-menu-content>   
                     </md-menu> 
                     <span flex></span>
-                    <h1 class="md-headline" >Muebles cauca</h1>
+                    <h1 class="md-display-1" >Muebles cauca</h1>
                 </div>             
             </md-toolbar>  
     </header>
     <section flex layout="column" layout-align="center center" layout-padding>
-        <md-content layout layout-padding>
-            <h1>Contactenos</h1>
+        <md-content layout layout-padding layout-align="center center">
+            <h1 class="md-display-2" hide-sm show-gt-sm show-md show-gt-md show-lg show-gt-lg>
+                Contactenos
+            </h1>
+            <h1 class="md-headline" show-sm hide-gt-sm hide-md hide-gt-md hide-lg hide-gt-lg>
+                Contactenos
+            </h1>
         </md-content>
-        <md-content flex latout-sm="column" layout-gt-sm="row" latout-md="row" layout-lg="row" layout-gt-lg="row">
-            <md-content flex layout="column" hide>
+        <md-content flex latout-sm="column" layout-gt-sm="row" latout-md="row" layout-lg="row" layout-gt-lg="row" layout-align="center center">
+            <md-content flex layout="column" show-sm hide-gt-sm hide-md hide-gt-md hide-lg hide-gt-lg>
                 <md-input-container flex>
                     <label>Nombre</label>
                     <input type="text">
@@ -83,27 +88,27 @@
                 </md-input-container>
                 <md-button flex class="md-raised md-accent">Enviar</md-button>
             </md-content>
-            <md-content flex layout="column" show>
-                <md-content layout="row">
-                    <label>Nombre:</label>
-                    <md-input-container flex>                    
-                        <input type="text">
-                    </md-input-container>
-                </md-content>
-                <md-content layout="row">
-                    <label>Correo:</label>
-                    <md-input-container flex>                    
-                        <input type="text">
-                    </md-input-container>
-                </md-content>
-                <md-content layout="row">
-                    <label>Asunto:</label>
+            <md-content layout="column" hide-sm show-gt-sm show-md show-gt-md show-lg show-gt-lg class="content">
+                <md-content layout="column">
+                    <label class="default-primary-color">Nombre:</label>
                     <md-input-container flex>                    
                         <input type="text">
                     </md-input-container>
                 </md-content>
                 <md-content layout="column">
-                <label>Mensaje:</label>
+                    <label class="default-primary-color">Correo:</label>
+                    <md-input-container flex>                    
+                        <input type="text">
+                    </md-input-container>
+                </md-content>
+                <md-content layout="column">
+                    <label class="default-primary-color">Asunto:</label>
+                    <md-input-container flex>                    
+                        <input type="text">
+                    </md-input-container>
+                </md-content>
+                <md-content layout="column">
+                <label class="default-primary-color">Mensaje:</label>
                 <md-input-container flex>                    
                     <textarea></textarea>
                 </md-input-container>
@@ -111,25 +116,25 @@
                 <md-button flex class="md-raised md-accent">Enviar</md-button>
             </md-content>
             <md-content layout="column" class="contact-padding icon">
-                <md-content layout="row">
+                <md-content layout="row" layout-align="center center">
                     <md-button class="md-fab md-primary md-mini" aria-label="Facebook">
                         <md-icon class="fa fa-facebook"></md-icon>
                     </md-button>
                     <md-button class="md-primary md-mini" aria-label="">Facebook</md-button>
                 </md-content>
-                <md-content layout="row">
+                <md-content layout="row" layout-align="center center">
                     <md-button class="md-fab md-primary md-mini" aria-label="Facebook">
                         <md-icon class="fa fa-twitter"></md-icon>
                     </md-button>
                     <md-button class="md-primary md-mini" aria-label="">Twitter</md-button>
                 </md-content>
-                <md-content layout="row">
+                <md-content layout="row" layout-align="center center">
                     <md-button class="md-fab md-primary md-mini" aria-label="Instagram">
                         <md-icon class="fa fa-instagram"></md-icon>
                     </md-button>
                     <md-button class="md-primary md-mini" aria-label="">Instagram</md-button>
                 </md-content>
-                <md-content layout="row">
+                <md-content layout="row" layout-align="center center">
                     <md-button class="md-fab md-primary md-mini" aria-label="Youtobe">
                         <md-icon class="fa fa-youtube"></md-icon>
                     </md-button>

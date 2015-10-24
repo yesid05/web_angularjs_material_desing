@@ -1,18 +1,32 @@
 section .contact-padding{
 	padding-left: 50px;
 }
-@media (max-width: 600px) {
-  section .contact-padding {
-    padding-left: 0px;
-  }
+section md-content{
+	width: 80%;
+	margin: 0 auto;
 }
+section .default-primary-color { color: #3F51B5; }
 .fa:before{
 	margin: 0 auto;
 	font-size: 23px;
 }
+
 .icon{
 	margin: 10px 0;
 }
 .icon .md-button{
 	margin: 10px 0;
+}
+
+.icon .md-button:last-child{
+	text-align: left;
+}
+
+@media (max-width: 600px) {
+  section .contact-padding {
+    padding-left: 0px;
+  }
+  section md-content{
+	width: 100%;
+  }
 }
